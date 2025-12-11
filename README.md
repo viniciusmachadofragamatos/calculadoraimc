@@ -1,16 +1,26 @@
-# calculadoraimc
+# Calculadora de IMC
+###### desenvolvida em Flutter, permitindo que o usuário:
+  Calcule o IMC de forma rápida e precisa
+  Veja a classificação automática (magreza, saudável, sobrepeso, etc.)
+  Salve cada cálculo no histórico usando SharedPreferences
+  Navegue entre telas usando PageView + BottomNavigationBar
+  Visualize data, peso, altura, IMC e categoria de cada registro
+  Tenha interface simples, organizada e responsiva
 
-A new Flutter project.
+O projeto utiliza um modelo de dados (Imc), uma camada de serviço (HistoryService) e uma estrutura limpa, seguindo boas práticas de organização em Flutter.
 
-## Getting Started
+# ✨ Tecnologias utilizadas
 
-This project is a starting point for a Flutter application.
+ *Flutter*
 
-A few resources to get you started if this is your first Flutter project:
+ *Dart*
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ *SharedPreferences* (persistência local)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ *PageView*
+
+ *ValueNotifier / ValueListenableBuilder*
+
+ *Material Design*
+
+ *Arquitetura simples e organizada*
