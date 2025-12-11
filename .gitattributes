@@ -1,16 +1,8 @@
-# Normalize line endings to LF for all text files
+
+# Normalize line endings for ALL text files, without overriding languages
 * text=auto eol=lf
 
-# Dart files
-*.dart text
-
-# Flutter assets
-*.yaml text
-*.json text
-*.svg text
-*.xml text
-
-# Binary files (no text conversion)
+# Binary files (GitHub Linguist mantém linguagem original)
 *.png binary
 *.jpg binary
 *.jpeg binary
@@ -22,23 +14,11 @@
 *.mp4 binary
 *.wav binary
 *.webp binary
+*.zip binary
 
-# iOS generated files
+# Prevent merge conflicts in iOS project files
 *.pbxproj merge=union
 
-# Android Gradle files
-*.gradle text
-*.kt text
-*.kts text
-
-# Windows / Linux / macOS resources
-*.exe binary
-*.dll binary
-*.so binary
-*.dylib binary
-
-# Avoid merge conflicts in lock files
+# Prevent annoying merge conflicts in lock file
 pubspec.lock merge=ours
 
-# Flutter build files (ignored by gitignore, but safe to mark here)
-build/ binary
