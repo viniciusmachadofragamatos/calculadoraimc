@@ -1,2 +1,44 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+# Dart files
+*.dart text
+
+# Flutter assets
+*.yaml text
+*.json text
+*.svg text
+*.xml text
+
+# Binary files (no text conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.mp3 binary
+*.mp4 binary
+*.wav binary
+*.webp binary
+
+# iOS generated files
+*.pbxproj merge=union
+
+# Android Gradle files
+*.gradle text
+*.kt text
+*.kts text
+
+# Windows / Linux / macOS resources
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Avoid merge conflicts in lock files
+pubspec.lock merge=ours
+
+# Flutter build files (ignored by gitignore, but safe to mark here)
+build/ binary
